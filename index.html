@@ -38,9 +38,10 @@
             text-align: center;
         }
 
-        /* עיצוב הלוגו */
+        /* עיצוב הלוגו - הוגדל פי 3 */
         .main-logo {
-            max-width: 250px; /* גודל מקסימלי ללוגו */
+            max-width: 750px; /* היה 250px */
+            width: 100%; /* מונע חריגה במסכים קטנים */
             height: auto;
             margin-bottom: 20px;
         }
@@ -127,7 +128,7 @@
 
         @media (max-width: 600px) {
             header h1 { font-size: 2rem; }
-            .main-logo { max-width: 200px; }
+            .main-logo { max-width: 100%; } /* מותאם לרוחב המסך בנייד */
             .cta-button { width: 100%; box-sizing: border-box; }
         }
     </style>
