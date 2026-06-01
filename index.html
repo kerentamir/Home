@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>אמהות ובנות | יצירת קשר מחדש</title>
+    <title>קרן האור שבך | יצירת קשר מחדש בין אמהות ובנות</title>
     <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
@@ -27,10 +27,22 @@
             margin-bottom: 15px;
         }
 
+        /* מרכוז מוחלט של ההדר */
         header {
             background-color: var(--secondary-color);
-            padding: 60px 20px;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
             text-align: center;
+        }
+
+        /* עיצוב הלוגו */
+        .main-logo {
+            max-width: 250px; /* גודל מקסימלי ללוגו */
+            height: auto;
+            margin-bottom: 20px;
         }
 
         header h1 {
@@ -115,6 +127,7 @@
 
         @media (max-width: 600px) {
             header h1 { font-size: 2rem; }
+            .main-logo { max-width: 200px; }
             .cta-button { width: 100%; box-sizing: border-box; }
         }
     </style>
@@ -122,6 +135,9 @@
 <body>
 
     <header>
+        <!-- הלוגו שונה לשם באנגלית כדי שיעבוד בגיטהאב -->
+        <img src="logo.png" alt="קרן האור שבך" class="main-logo">
+        
         <h1>אמהות ובנות | יצירת קשר מחדש</h1>
         <p><strong>כשאת מרגישה שאת והבת שלך כבר לא מדברות באותה שפה — יש דרך לחזור לקרבה.</strong></p>
         <p>תהליך רגשי לאמהות ובנות שמרגישות ריחוק, קונפליקטים או חוסר הבנה בגיל ההתבגרות.<br>
@@ -210,8 +226,8 @@
             <h2>בואי נדבר</h2>
             <p>אם את מרגישה שזה בדיוק הבית שלך — ואת רוצה שינוי אמיתי בקשר עם הבת שלך, אני מזמינה אותך לשיחת היכרות קצרה.</p>
             <p>נבין יחד מה קורה בבית שלך, ואיך אפשר להתחיל שינוי עדין, מדויק ומותאם אליכן.</p>
-            <!-- ניתן להחליף את הקישור כאן לקישור לוואטסאפ או לטופס -->
-            <a href="https://wa.me/מספר_הטלפון_שלה" class="cta-button" target="_blank">לשליחת הודעת וואטסאפ</a>
+            <!-- קישור לוואטסאפ בפורמט בטוח עם קידוד עברית -->
+            <a href="https://api.whatsapp.com/send?phone=972548611555&text=%D7%94%D7%99%D7%99%20%D7%A7%D7%A8%D7%9F,%20%D7%94%D7%92%D7%A2%D7%AA%D7%99%20%D7%9E%D7%93%D7%A3%20%D7%94%D7%A0%D7%97%D7%99%D7%AA%D7%94%20%D7%95%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%A4%D7%A8%D7%98%D7%99%D7%9D%20%D7%A2%D7%9C%20%D7%94%D7%AA%D7%94%D7%9C%D7%99%D7%9A" class="cta-button" target="_blank">לשליחת הודעת וואטסאפ</a>
         </section>
 
     </div>
